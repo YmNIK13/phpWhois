@@ -86,10 +86,11 @@ if (isset($_GET['query'])) {
                 $utils = new Utils;
                 $winfo = $utils->showHTML($result);
             } else {
-                if (isset($whois->query['errstr']))
+                if (isset($whois->query['errstr'])) {
                     $winfo = implode($whois->query['errstr'], "\n<br />");
-                else
+                } else {
                     $winfo = 'Unexpected error';
+                }
             }
             break;
 
@@ -122,7 +123,8 @@ exit(view($data_out, 'template.php'));
 //-------------------------------------------------------------------------
 
 
-function view(array $data, string $tpl): string {
+function view(array $data, string $tpl): string
+{
     $content = '';
 
     if (file_exists($tpl)) {
