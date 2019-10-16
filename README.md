@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/jsmitty12/phpWhois.svg?branch=master)](https://travis-ci.org/jsmitty12/phpWhois)
-
 Introduction
 ------------
 
@@ -38,11 +36,11 @@ Installation
 
 #### Stable version
 
-`php composer.phar require "jsmitty12/phpwhois":"^5.0"`
+`composer require "ymnik13/phpwhois":"^5.5"`
 
 #### Latest development version
 
-`php composer.phar require "jsmitty12/phpwhois":"dev-master"`
+`composer require "ymnik13/phpwhois":"dev-master"`
 
 
 Example usage
@@ -212,14 +210,14 @@ it will output the total layout of the returned object to the
 web browser.
 
 The latest version of the package and a demo script resides at 
-https://github.com/jsmitty12/phpwhois
+https://github.com/YmNIK13/phpWhois
 
 Contributing
 ---------------
 
 If you want to add support for new TLD, extend functionality or
 correct a bug, feel free to create a new pull request at Github's
-repository https://github.com/jsmitty12/phpwhois
+repository https://github.com/YmNIK13/phpWhois
 
 Credits
 -------
@@ -231,3 +229,5 @@ David Saez Padros <david@ols.es>
 Ross Golder <ross@golder.org>
 
 Dmitry Lukashin <dmitry@lukashin.ru>
+
+Valeriy Stavitskiy <valery.stavitsky@gmail.com>
