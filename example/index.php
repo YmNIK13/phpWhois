@@ -64,7 +64,7 @@ if (isset($_GET['query'])) {
     // Comment the following line to disable support for non ICANN tld's
     $whois->non_icann = true;
 
-    $result = $whois->Lookup($get_params['query']);
+    $result = $whois->lookup($get_params['query']);
 
     $data_out['query'] = $get_params['query'] ?? '';
     $data_out['get_params'] = $get_params ?? [];

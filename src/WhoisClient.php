@@ -237,14 +237,16 @@ class WhoisClient
         return $output;
     }
 
-    /**
-     * Perform lookup
-     *
-     * @return array The *rawdata* element contains an
-     * array of lines gathered from the whois query. If a top level domain
-     * handler class was found for the domain, other elements will have been
-     * populated too.
-     */
+	/**
+	 * Perform lookup
+	 *
+	 * @param string $query
+	 * @param bool $deep_whois
+	 * @return array The *rawdata* element contains an
+	 * array of lines gathered from the whois query. If a top level domain
+	 * handler class was found for the domain, other elements will have been
+	 * populated too.
+	 */
 
     public function getData($query = '', $deep_whois = true)
     {
